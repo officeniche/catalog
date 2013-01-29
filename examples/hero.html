@@ -66,6 +66,27 @@
         chart.draw(data, options);
       }
       
+      function drawChart2() {
+
+      // Create the data table.
+      var data = google.visualization.arrayToDataTable([
+          ['Month', 'Expenses', 'Savings'],
+          ['04',  1200,      100],
+          ['05',  1100,      120],
+          ['06',  1060,       120],
+          ['07',  1030,      160]
+        ]);
+
+      // Set chart options
+      var options = {
+          title: 'Monthly Expenditure'
+        };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+      
       
     </script>
     <!-- end GoogleCharts Initialisation -->
@@ -198,7 +219,7 @@
 
 <div id="#savings">
               <h1>Monthly Savings</h1>
-              <div id="chart_div" style="width: 900px; height: 500px;"></div>
+              <div id="chart_div2" style="width: 900px; height: 500px;"></div>
       </div>
       <p></p>
       <p></p>
