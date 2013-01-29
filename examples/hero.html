@@ -118,12 +118,12 @@
         <p><a class="btn btn-primary btn-large" href="#newexpense">Start Tracking! &raquo;</a></p>
       </div>
       
-      <div id="#newexpense" style="hidden">
+      <div id="#newexpense" style="display: none">
         <h1>Add New Expense</h1>
-        <form name="newexpense">
+        <form name="newexpense" action="addnewexpense.jsp">
               <input type="date" placeholder="Date (mm/dd/yyyy)">
               <input type="text" placeholder="Category">
-              <input type="currency" placeholder="Amount">
+              <input type="number" placeholder="Amount">
               <input type="text" placeholder="Description">
               <button type="submit" class="btn">Add New Expense</button>
         </form>
