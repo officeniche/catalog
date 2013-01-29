@@ -41,6 +41,7 @@
       // Set a callback to run when the Google Visualization API is loaded.
       google.setOnLoadCallback(drawChart);
       google.setOnLoadCallback(drawChart2);
+      google.setOnLoadCallback(drawChart3);
 
 
       // Callback that creates and populates a data table, 
@@ -85,6 +86,24 @@
 
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+      
+      function drawChart3() {
+        var data = google.visualization.arrayToDataTable([
+           ['Month', 'Groceries', 'Shopping', 'Allowance', 'Daily', 'Misc'],
+          ['04',  500,      100,  50, 500, 20, 0],
+          ['05',  550,      160, 40, 500, 25, 10],
+          ['06',  400,      120, 60, 500, 25, 15],
+          ['07',  470,      140, 30, 500, 30, 0]
+        ]);
+
+        var options = {
+          title: 'Expenditure by Category',
+          vAxis: {title: 'Month',  titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div3'));
         chart.draw(data, options);
       }
       
@@ -232,7 +251,7 @@
       
       <div id="#category">
               <h1>Category Spending</h1>
-              <div id="chart_div" style="width: 900px; height: 500px;"></div>
+              <div id="chart_div3" style="width: 900px; height: 500px;"></div>
       </div>
       <p></p>
       <p></p>
