@@ -84,6 +84,13 @@
       });
     </script>
     
+    <script>
+      function myFunction()
+      {
+      alert("You are nearing the monthly limit set ($32.16 left)");
+      }
+      </script>
+    
   </head>
 
   <body>
@@ -162,7 +169,7 @@
       
       <a class="#limits">
               <h1>Set Monthly Limit</h1>
-        <form name="newexpense" action="setlimit.jsp">
+        <form name="newexpense" action="myFunction()">
               <input type="number" placeholder="Month (mm)">
               <input type="number" placeholder="Limit">
               <button type="submit" class="btn">Set Limit</button>
