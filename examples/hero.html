@@ -33,6 +33,18 @@
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+       
+       $('body').on('click','nav a', hideDiv(e) {
+            $('#main').css('display', 'block');
+            $('#main').children().addClass('hide');
+            $($(this).attr('href')).removeClass('hide');
+            e.preventDefault();
+        });
+        
+        #main{
+            display:none;
+        }
+    
     
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
@@ -94,7 +106,6 @@
                   <li class="divider"></li>
                   <li class="nav-header">Others</li>
                   <li><a href="#category">By Category</a></li>
-                  <li><a href="#range">By Range</a></li>
                 </ul>
               </li>
             </ul>
@@ -118,7 +129,7 @@
         <p><a class="btn btn-primary btn-large" href="#newexpense">Start Tracking! &raquo;</a></p>
       </div>
       
-      <div id="#newexpense" style="display: none">
+      <div id="#newexpense">
         <h1>Add New Expense</h1>
         <form name="newexpense" action="addnewexpense.jsp">
               <input type="date" placeholder="Date (mm/dd/yyyy)">
@@ -128,6 +139,31 @@
               <button type="submit" class="btn">Add New Expense</button>
         </form>
       </div>
+      
+      <div id="#limits">
+              <h1>Set Monthly Limit</h1>
+        <form name="newexpense" action="setlimit.jsp">
+              <input type="number" placeholder="Month (mm)">
+              <input type="number" placeholder="Limit">
+              <button type="submit" class="btn">Set Limit</button>
+        </form>
+      </div>
+
+    <div id="#spending">
+              <h1>Monthly Spending</h1>
+              <div id="chart_div"></div>
+      </div>
+
+<div id="#savings">
+              <h1>Monthly Savings</h1>
+              <div id="chart_div"></div>
+      </div>
+      
+      <div id="#category">
+              <h1>Category Spending</h1>
+              <div id="chart_div"></div>
+      </div>
+    
 
       <hr>
 
