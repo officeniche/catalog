@@ -33,17 +33,6 @@
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
-       
-       $('body').on('click','nav a', hideDiv(e) {
-            $('#main').css('display', 'block');
-            $('#main').children().addClass('hide');
-            $($(this).attr('href')).removeClass('hide');
-            e.preventDefault();
-        });
-        
-        #main{
-            display:none;
-        }
     
     
       // Load the Visualization API and the piechart package.
@@ -76,8 +65,24 @@
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
+      
+      
     </script>
     <!-- end GoogleCharts Initialisation -->
+    
+    <script type = "text/javascript">
+      
+      $(function hideDiv() {
+          $('#main').hide();
+      });
+      
+      $('body').on('click','nav a', function(e) {
+          $('#main').show();
+          $('#main').children().hide();
+          $($(this).attr('href')).show();
+          e.preventDefault();
+      });
+    </script>
     
   </head>
 
@@ -151,17 +156,17 @@
 
     <div id="#spending">
               <h1>Monthly Spending</h1>
-              <div id="chart_div"></div>
+              <div id="chart_div" style="width: 900px; height: 500px;"></div>
       </div>
 
 <div id="#savings">
               <h1>Monthly Savings</h1>
-              <div id="chart_div"></div>
+              <div id="chart_div" style="width: 900px; height: 500px;"></div>
       </div>
       
       <div id="#category">
               <h1>Category Spending</h1>
-              <div id="chart_div"></div>
+              <div id="chart_div" style="width: 900px; height: 500px;"></div>
       </div>
     
 
