@@ -209,11 +209,14 @@
       <p></p>
       <p></p>
       <p></p>
-    </div> 
+    </div>
+    
+    
+    <div id = "accordion">
       
-      <div class="#newexpense">
         <h1><img src ="http://www.dreamstime.com/add-user-icon-thumb10022769.jpg" height="200px" width="100px"/>
         Add New Expense</h1>
+        <div class="#newexpense">
         <form name="newexpense">
         <table border = "1" frame='void'>
               <tr><td>Date: </td><td><input type="date" placeholder="Date (mm/dd/yyyy)"></td></tr>
@@ -223,7 +226,7 @@
         </table>
               <p><a class="btn btn-primary btn-large" onclick="myFunction()">Add New Expense</a></p>
         </form>
-      </a>
+      </div>
       <p></p>
       <p></p>
       <p></p>
@@ -233,9 +236,10 @@
  
       
       
-      <div class="#limits">
+
               <h1><img src ="http://school.discoveryeducation.com/clipart/images/stopsign4c.gif" height="200px" width="100px"/>
               Set Monthly Limit</h1>
+                    <div class="#limits">
         <form name="newexpense" action="myFunction()">
         <table= "1" frame='void'>
               <tr><td>Month: </td><td><input type="number" placeholder="Month (mm)"></td></tr>
@@ -244,7 +248,7 @@
            </table>    
               <p><a class="btn btn-primary btn-large" onclick="setLimit()">Set Limit</a></p>
         </form>
-      </a>
+      </div>
 <p></p>
       <p></p>
       <p></p>
@@ -253,9 +257,8 @@
       <p></p>
  
 
-
-    <div id="#spending">
-              <h1>Monthly Spending</h1>
+  <h1>Monthly Spending</h1>
+    <div class="#spending">
               <div id="chart_div" style="width: 900px; height: 500px;"></div>
       </div>
       <p></p>
