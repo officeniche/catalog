@@ -30,6 +30,10 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
    
    <!-- nav bar accordion -->
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
      <script>
     $(function() {
       $( "#accordion" ).accordion({
@@ -209,7 +213,7 @@
               Category: <input type="number" placeholder="Category"><br/>
               Amount: <input type="number" placeholder="Amount"><br/>
               Description: <input type="text" placeholder="Description"><br/>
-              <p><a class="btn btn-primary btn-large" href="myFunction()">Add New Expense</a></p>
+              <p><a class="btn btn-primary btn-large" onclick="myFunction()">Add New Expense</a></p>
         </form>
       </a>
       <p></p>
@@ -228,7 +232,7 @@
               Month: <input type="number" placeholder="Month (mm)"><br/>
               Limit: <input type="number" placeholder="Limit"><br/>
               Alert Threshold: <input type="number" placeholder="Threshold"><br/>
-              <p><a class="btn btn-primary btn-large" href="myFunction()">Set Limit</a></p>
+              <p><a class="btn btn-primary btn-large" onclick="myFunction()">Set Limit</a></p>
         </form>
       </a>
 <p></p>
