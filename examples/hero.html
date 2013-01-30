@@ -144,6 +144,12 @@
       {
       alert("You are nearing the monthly limit set ($32.16 left)");
       }
+      
+      function setLimit()
+      {
+      alert("Limit set: $30,000, Alert at : $25,000");
+      }
+      
       </script>
     
   </head>
@@ -209,10 +215,12 @@
         <h1><img src ="http://www.dreamstime.com/add-user-icon-thumb10022769.jpg" height="200px" width="100px"/>
         Add New Expense</h1>
         <form name="newexpense">
-              Date: <input type="date" placeholder="Date (mm/dd/yyyy)"><br/>
-              Category: <input type="number" placeholder="Category"><br/>
-              Amount: <input type="number" placeholder="Amount"><br/>
-              Description: <input type="text" placeholder="Description"><br/>
+        <table>
+              <td><tr>Date: </tr><input type="date" placeholder="Date (mm/dd/yyyy)"></td>
+              <td><tr>Category: </tr><input type="number" placeholder="Category"></td>
+              <td><tr>Amount: </tr><input type="number" placeholder="Amount"></td>
+              <td><tr>Description: </tr><input type="text" placeholder="Description"></td>
+        </table>
               <p><a class="btn btn-primary btn-large" onclick="myFunction()">Add New Expense</a></p>
         </form>
       </a>
@@ -229,10 +237,12 @@
               <h1><img src ="http://school.discoveryeducation.com/clipart/images/stopsign4c.gif" height="200px" width="100px"/>
               Set Monthly Limit</h1>
         <form name="newexpense" action="myFunction()">
-              Month: <input type="number" placeholder="Month (mm)"><br/>
-              Limit: <input type="number" placeholder="Limit"><br/>
-              Alert Threshold: <input type="number" placeholder="Threshold"><br/>
-              <p><a class="btn btn-primary btn-large" onclick="myFunction()">Set Limit</a></p>
+        <table>
+              <td><tr>Month: <input type="number" placeholder="Month (mm)"></td>
+              <td><tr>Limit: <input type="number" placeholder="Limit"></td>
+              <td><tr>Alert Threshold: <input type="number" placeholder="Threshold"></td>
+           </table>    
+              <p><a class="btn btn-primary btn-large" onclick="setLimit()">Set Limit</a></p>
         </form>
       </a>
 <p></p>
