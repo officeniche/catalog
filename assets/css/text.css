@@ -24,11 +24,17 @@ body {
         padding: 14px 24px;
       }
 	  
-      .table, td, th{
-	border:1px solid grey;
+      table, td, th{
+	border:1px solid gray;
       }
 	th
       {
-	background-color:grey;
+	background-color:gray;
 	color:white;
+      }
+      
+      img {
+	max-width: 90%;
+	height: auto;
+	padding:10%;
       }
