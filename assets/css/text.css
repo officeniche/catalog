@@ -25,7 +25,7 @@ body {
       }
 	  
       table, td, th{
-	border:1px solid gray;
+	border:2px solid gray;
       }
 	th
       {
@@ -36,6 +36,4 @@ body {
       img {
 	max-width: 90%;
 	height: auto;
-	padding:5%;
-	padding-right:5%;
       }
