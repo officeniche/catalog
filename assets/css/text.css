@@ -24,12 +24,11 @@ body {
         padding: 14px 24px;
       }
 	  
-	  .table, td, th
-	  {
-		border:1px solid grey;
-	  }
-	  th
-	  {
-		background-color:grey;
-		color:white;
-	  }
+      .table, td, th{
+	border:1px solid grey;
+      }
+	th
+      {
+	background-color:grey;
+	color:white;
+      }
